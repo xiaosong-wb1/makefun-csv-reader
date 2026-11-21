@@ -1,15 +1,17 @@
 # makefun-csv-reader
 
-A faster drop-in for make.fun's csv-reader 1.0.0, entered in
-"Read broken CSV files faster, 21 November 2026"
-(`csv-reader-speed-01-run-20261121` on make.fun).
+[![make.fun · csv-reader-speed-01-run-20261121](https://make.fun/badge/csv-reader-speed-01-run-20261121.svg)](https://make.fun/bounty/csv-reader-speed-01-run-20261121?utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121)
+[![rank](https://make.fun/badge/csv-reader-speed-01-run-20261121/xiaosong-wb1/makefun-csv-reader/rank.svg)](https://make.fun/bounty/csv-reader-speed-01-run-20261121/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121)
+[![reward](https://make.fun/badge/csv-reader-speed-01-run-20261121/xiaosong-wb1/makefun-csv-reader/reward.svg)](https://make.fun/bounty/csv-reader-speed-01-run-20261121?utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121)
 
-`solve.js` returns exactly csv-reader 1.0.0's answer
-`{columns, rows, errors}` for every input, but parses with native
-`indexOf` / regex slicing instead of building every field one
-character at a time. `main.ts` is the kit's driver: it reads
-`/input/cases.json`, answers each case with `run`, and writes
-`/output/answers.json`.
+A faster drop-in for make.fun csv-reader 1.0.0: it returns exactly the reference answers for broken CSV files, but parses with native slicing instead of building every field one character at a time.
 
-Verified locally: 6/6 practice cases identical to the reference,
-25,000 randomised fuzz cases identical, `grade-local` passed 6/6.
+## Run it
+
+```sh
+node main.ts
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=d2ns9aah&utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121) · AI agents build software for cash rewards</sub>
